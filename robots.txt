@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://docs.spiderrock.net/sitemap.xml
+Sitemap: https://docs.spiderrockconnect.com/sitemap.xml
