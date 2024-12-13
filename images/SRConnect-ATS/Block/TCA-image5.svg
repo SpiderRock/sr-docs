@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 810">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-3, .cls-5 {
+        stroke: #af4f3f;
+      }
+
+      .cls-9 {
+        font-size: 15px;
+      }
+
+      .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        fill: #fff;
+      }
+
+      .cls-9, .cls-11, .cls-13 {
+        font-family: OpenSans-SemiBold, 'Open Sans';
+        font-weight: 600;
+      }
+
+      .cls-14 {
+        fill: #24aae2;
+      }
+
+      .cls-14, .cls-15 {
+        opacity: .4;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-dasharray: 11.17 5.59;
+      }
+
+      .cls-2, .cls-6, .cls-7 {
+        stroke: #25a9e1;
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3, .cls-6 {
+        stroke-dasharray: 11.55 5.78;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-17 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-18 {
+        fill: #afd3a0;
+      }
+
+      .cls-10 {
+        font-family: OpenSans-Bold, 'Open Sans';
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .cls-11 {
+        font-size: 21px;
+      }
+
+      .cls-13 {
+        font-size: 25px;
+      }
+
+      .cls-8 {
+        stroke: #231f20;
+        stroke-width: 3px;
+      }
+
+      .cls-15 {
+        fill: #ae4e3f;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="345.29" y1="194.63" x2="1094.71" y2="194.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9db1c4"/>
+      <stop offset="1" stop-color="#3a6279"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="598.76" y2="598.76" xlink:href="#linear-gradient"/>
+  </defs>
+  <text class="cls-11" transform="translate(628 343.23)"><tspan x="0" y="0">$1.50</tspan></text>
+  <text class="cls-11" transform="translate(758.21 343.23)"><tspan x="0" y="0">$1.60</tspan></text>
+  <text class="cls-11" transform="translate(628 749.06)"><tspan x="0" y="0">$1.50</tspan></text>
+  <text class="cls-11" transform="translate(693.11 749.06)"><tspan x="0" y="0">$1.55</tspan></text>
+  <text class="cls-11" transform="translate(758.21 749.06)"><tspan x="0" y="0">$1.60</tspan></text>
+  <text class="cls-13" transform="translate(211.68 203.18)"><tspan x="0" y="0">Trial 1</tspan></text>
+  <rect class="cls-17" x="345.29" y="170.63" width="749.42" height="48"/>
+  <rect class="cls-14" x="629.35" y="73.08" width="51.1" height="243.1"/>
+  <rect class="cls-15" x="759.56" y="73.08" width="51.1" height="243.1"/>
+  <text class="cls-13" transform="translate(211.68 607.31)"><tspan x="0" y="0">Trial 2</tspan></text>
+  <rect class="cls-16" x="345.29" y="574.76" width="749.42" height="48"/>
+  <rect class="cls-14" x="759.56" y="477.21" width="51.1" height="243.1"/>
+  <g>
+    <rect class="cls-15" x="694.45" y="477.21" width="51.1" height="243.1"/>
+    <g>
+      <circle class="cls-8" cx="720" cy="600.31" r="13.16"/>
+      <circle class="cls-18" cx="720" cy="600.31" r="8.3"/>
+    </g>
+  </g>
+  <text class="cls-10" transform="translate(44.45 71.53)"><tspan x="0" y="0">Example Five</tspan></text>
+  <line class="cls-4" x1="398.86" y1="71.53" x2="398.86" y2="314.63"/>
+  <text class="cls-9" transform="translate(387.15 344.93)"><tspan x="0" y="0">Bid</tspan></text>
+  <line class="cls-4" x1="1033.95" y1="71.53" x2="1033.95" y2="314.63"/>
+  <text class="cls-9" transform="translate(1015.06 344.93)"><tspan x="0" y="0">Offer</tspan></text>
+  <line class="cls-4" x1="398.86" y1="475.66" x2="398.86" y2="718.76"/>
+  <text class="cls-9" transform="translate(387.15 749.06)"><tspan x="0" y="0">Bid</tspan></text>
+  <line class="cls-4" x1="1033.95" y1="475.66" x2="1033.95" y2="718.76"/>
+  <text class="cls-9" transform="translate(1015.06 749.06)"><tspan x="0" y="0">Offer</tspan></text>
+  <g>
+    <polyline class="cls-1" points="810.65 714.31 810.65 720.31 804.65 720.31"/>
+    <line class="cls-5" x1="799.07" y1="720.31" x2="768.35" y2="720.31"/>
+    <polyline class="cls-1" points="765.56 720.31 759.56 720.31 759.56 714.31"/>
+    <line class="cls-3" x1="759.56" y1="708.53" x2="759.56" y2="486.1"/>
+    <polyline class="cls-1" points="759.56 483.21 759.56 477.21 765.56 477.21"/>
+    <line class="cls-5" x1="771.14" y1="477.21" x2="801.86" y2="477.21"/>
+    <polyline class="cls-1" points="804.65 477.21 810.65 477.21 810.65 483.21"/>
+    <line class="cls-3" x1="810.65" y1="488.99" x2="810.65" y2="711.42"/>
+  </g>
+  <g>
+    <polyline class="cls-7" points="680.44 714.31 680.44 720.31 674.44 720.31"/>
+    <line class="cls-2" x1="668.86" y1="720.31" x2="638.14" y2="720.31"/>
+    <polyline class="cls-7" points="635.35 720.31 629.35 720.31 629.35 714.31"/>
+    <line class="cls-6" x1="629.35" y1="708.53" x2="629.35" y2="486.1"/>
+    <polyline class="cls-7" points="629.35 483.21 629.35 477.21 635.35 477.21"/>
+    <line class="cls-2" x1="640.93" y1="477.21" x2="671.65" y2="477.21"/>
+    <polyline class="cls-7" points="674.44 477.21 680.44 477.21 680.44 483.21"/>
+    <line class="cls-6" x1="680.44" y1="488.99" x2="680.44" y2="711.42"/>
+  </g>
+  <path class="cls-12" d="M1439,1v808H1V1h1438M1440,0H0v810h1440V0h0Z"/>
+</svg>
