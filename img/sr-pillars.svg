@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 90" xml:space="preserve">
+<style type="text/css">
+	.pillar-blue{fill:#3683CC;}
+	.pillar-orange{fill:#D94C37;}
+</style>
+<g transform="translate(-90, -5)">
+	<path class="pillar-blue" d="M109,88l2.8-55.5v-0.4c0-0.4-0.4-0.7-0.8-0.7H94.4c-0.4,0-0.8,0.3-0.8,0.7l-2.7,55.1c0,0.4,0.3,0.8,0.8,0.8H109z"/>
+	<path class="pillar-orange" d="M130.5,9.7h-14.6c-0.5,0-0.9,0.3-0.9,0.7L111.1,88h23.2c0.5,0,0.9-0.3,0.9-0.7l-3.8-76.9C131.4,10,131,9.7,130.5,9.7"/>
+</g>
+</svg>
+
