@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 810">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-5 {
+        stroke: #af4f3f;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-7 {
+        font-size: 15px;
+      }
+
+      .cls-2, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        fill: #231f20;
+      }
+
+      .cls-2, .cls-7, .cls-9, .cls-11 {
+        font-family: OpenSans-SemiBold, 'Open Sans';
+        font-weight: 600;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #374151;
+      }
+
+      .cls-12 {
+        fill: #24aae2;
+      }
+
+      .cls-12, .cls-13 {
+        opacity: .4;
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        stroke-dasharray: 11.55 5.78;
+      }
+
+      .cls-15 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-16 {
+        fill: #afd3a0;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 11.17 5.59;
+      }
+
+      .cls-8 {
+        font-family: OpenSans-Bold, 'Open Sans';
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .cls-9 {
+        font-size: 21px;
+      }
+
+      .cls-11 {
+        font-size: 25px;
+      }
+
+      .cls-6 {
+        stroke: #231f20;
+        stroke-width: 3px;
+      }
+
+      .cls-13 {
+        fill: #ae4e3f;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="345.29" y1="194.63" x2="1094.71" y2="194.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e5e7eb"/>
+      <stop offset="1" stop-color="#f3f4f6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="598.76" y2="598.76" xlink:href="#linear-gradient"/>
+  </defs>
+  <text class="cls-9" transform="translate(628 343.23)"><tspan x="0" y="0">$1.50</tspan></text>
+  <text class="cls-9" transform="translate(758.21 343.23)"><tspan x="0" y="0">$1.60</tspan></text>
+  <text class="cls-9" transform="translate(628 749.06)"><tspan x="0" y="0">$1.50</tspan></text>
+  <text class="cls-9" transform="translate(497.79 749.06)"><tspan x="0" y="0">$1.40</tspan></text>
+  <text class="cls-9" transform="translate(758.21 749.06)"><tspan x="0" y="0">$1.60</tspan></text>
+  <text class="cls-11" transform="translate(210.24 203.18)"><tspan x="0" y="0">Trial 1</tspan></text>
+  <rect class="cls-15" x="345.29" y="170.63" width="749.42" height="48"/>
+  <line class="cls-4" x1="398.86" y1="71.53" x2="398.86" y2="314.63"/>
+  <text class="cls-2" transform="translate(387.15 344.93)"><tspan x="0" y="0">Bid</tspan></text>
+  <line class="cls-4" x1="1033.95" y1="71.53" x2="1033.95" y2="314.63"/>
+  <text class="cls-7" transform="translate(1015.06 344.93)"><tspan x="0" y="0">Offer</tspan></text>
+  <text class="cls-11" transform="translate(210.24 607.31)"><tspan x="0" y="0">Trial 2</tspan></text>
+  <rect class="cls-14" x="345.29" y="574.76" width="749.42" height="48"/>
+  <line class="cls-4" x1="398.86" y1="475.66" x2="398.86" y2="718.76"/>
+  <text class="cls-7" transform="translate(387.15 749.06)"><tspan x="0" y="0">Bid</tspan></text>
+  <line class="cls-4" x1="1033.95" y1="475.66" x2="1033.95" y2="718.76"/>
+  <text class="cls-7" transform="translate(1015.06 749.06)"><tspan x="0" y="0">Offer</tspan></text>
+  <rect class="cls-12" x="629.35" y="477.21" width="51.1" height="243.1"/>
+  <rect class="cls-13" x="499.13" y="477.21" width="51.1" height="243.1"/>
+  <g>
+    <circle class="cls-6" cx="654.89" cy="598.76" r="13.16"/>
+    <circle class="cls-16" cx="654.89" cy="598.76" r="8.3"/>
+  </g>
+  <text class="cls-8" transform="translate(43.02 71.53)"><tspan x="0" y="0">Example Two</tspan></text>
+  <g>
+    <polyline class="cls-1" points="810.65 714.31 810.65 720.31 804.65 720.31"/>
+    <line class="cls-5" x1="799.07" y1="720.31" x2="768.35" y2="720.31"/>
+    <polyline class="cls-1" points="765.56 720.31 759.56 720.31 759.56 714.31"/>
+    <line class="cls-3" x1="759.56" y1="708.53" x2="759.56" y2="486.1"/>
+    <polyline class="cls-1" points="759.56 483.21 759.56 477.21 765.56 477.21"/>
+    <line class="cls-5" x1="771.14" y1="477.21" x2="801.86" y2="477.21"/>
+    <polyline class="cls-1" points="804.65 477.21 810.65 477.21 810.65 483.21"/>
+    <line class="cls-3" x1="810.65" y1="488.99" x2="810.65" y2="711.42"/>
+  </g>
+  <path class="cls-10" d="M1439,1v808H1V1h1438M1440,0H0v810h1440V0h0Z"/>
+  <g>
+    <rect class="cls-12" x="629.35" y="73.08" width="51.1" height="243.1"/>
+    <rect class="cls-13" x="759.56" y="73.08" width="51.1" height="243.1"/>
+  </g>
+</svg>
+
