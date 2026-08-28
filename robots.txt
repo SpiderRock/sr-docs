@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /docs/8.
+Disallow: /docs/next/
 
 Sitemap: https://docs.spiderrockconnect.com/sitemap.xml
