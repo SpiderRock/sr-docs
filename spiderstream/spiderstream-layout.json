@@ -1,7 +1,7 @@
 {
   "format": "spiderstream-wire-layout",
   "formatVersion": 1,
-  "generatedFrom": "schema:38654eaa08fcd0378aa7cd94d96f2f0ad5a6c0640fd66f226a94ec94aea7242f",
+  "generatedFrom": "schema:1a4856824e20864863404c72d370a87732d664cb958408ef308a59e7932d609e",
   "byteOrder": "little",
   "packing": "none: every struct is byte-packed, no alignment padding",
   "primitives": {
