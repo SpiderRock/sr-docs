@@ -1,7 +1,7 @@
 {
   "format": "spiderstream-wire-layout",
   "formatVersion": 1,
-  "generatedFrom": "schema:1a4856824e20864863404c72d370a87732d664cb958408ef308a59e7932d609e",
+  "generatedFrom": "schema:76f392539729c87bbada5020f7f8e1f1a52044f2e220c041fa9b065f62515f3f",
   "byteOrder": "little",
   "packing": "none: every struct is byte-packed, no alignment padding",
   "primitives": {
@@ -7067,7 +7067,7 @@
           "offset": 111,
           "size": 4,
           "type": "i32",
-          "description": "day print volume in contracts [this exchange]"
+          "description": "day print volume in contracts, all exchanges, net of cancels"
         },
         {
           "name": "cxlVolume",
