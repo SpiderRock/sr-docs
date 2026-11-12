@@ -1,7 +1,7 @@
 {
   "format": "spiderstream-wire-layout",
   "formatVersion": 1,
-  "generatedFrom": "schema:76f392539729c87bbada5020f7f8e1f1a52044f2e220c041fa9b065f62515f3f",
+  "generatedFrom": "schema:a6fb9ff53056c17815e14469780e956f18980145ab21fb68337d8ad64297a908",
   "byteOrder": "little",
   "packing": "none: every struct is byte-packed, no alignment padding",
   "primitives": {
@@ -1972,10 +1972,10 @@
     {
       "name": "FutureBookQuote",
       "messageType": 2580,
-      "schemaHash": "7f290414d4f35437",
+      "schemaHash": "1037d8b9c5353901",
       "pkeySize": 18,
-      "bodySize": 138,
-      "fixedSize": 184,
+      "bodySize": 130,
+      "fixedSize": 176,
       "isVariableLength": false,
       "fields": [
         {
@@ -2242,29 +2242,19 @@
           "type": "i64",
           "semantics": "unixNanos",
           "description": "inbound packet PTP timestamp from SR gateway switch; synchronized with facility grandfather clock"
-        },
-        {
-          "name": "exchTimestamp",
-          "fieldId": 184,
-          "section": "body",
-          "offset": 176,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "the matching engine\u0027s stamp, or the nearest the feed carries (the participant stamp on CTA and UTP); 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "02344df10971f42a",
+      "layoutHash": "6474d8546f36611c",
       "description": "One record per future contract, replaced on each book change; updateType says whether the price, the size or both changed.\r\nThis table contains live future quote records from the listing exchange.  Each record contains up to four price levels and represents a live snapshot of the book for a specific future."
     },
     {
       "name": "FuturePrint",
       "messageType": 2595,
-      "schemaHash": "706953256366f289",
+      "schemaHash": "729659a2b00af374",
       "pkeySize": 18,
-      "bodySize": 85,
-      "fixedSize": 131,
+      "bodySize": 77,
+      "fixedSize": 123,
       "isVariableLength": false,
       "fields": [
         {
@@ -2442,20 +2432,10 @@
           "type": "i64",
           "semantics": "dotnetTicks",
           "description": "SR system timestamp of the most recent record update"
-        },
-        {
-          "name": "srcTimestamp",
-          "fieldId": 154,
-          "section": "body",
-          "offset": 123,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "source high-precision timestamp (if available): the SIP\u0027s, the exchange gateway\u0027s or a vendor\u0027s; 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "1e07030ca9b263ca",
+      "layoutHash": "d4b66ea35441fa04",
       "description": "One record per future contract, replaced by each new print, so the record always holds the latest trade.\r\nThe most recent (last) print record for each active futures market."
     },
     {
@@ -2787,10 +2767,10 @@
     {
       "name": "IndexQuote",
       "messageType": 2675,
-      "schemaHash": "3e661c0e2c08cbb5",
+      "schemaHash": "263ce8ac376ee6ad",
       "pkeySize": 15,
-      "bodySize": 51,
-      "fixedSize": 94,
+      "bodySize": 43,
+      "fixedSize": 86,
       "isVariableLength": false,
       "fields": [
         {
@@ -2860,38 +2840,28 @@
           "description": "inbound packet PTP timestamp from SR gateway switch; synchronized with facility grandfather clock"
         },
         {
-          "name": "timestamp",
-          "fieldId": 115,
-          "section": "body",
-          "offset": 77,
-          "size": 8,
-          "type": "i64",
-          "semantics": "dotnetTicks",
-          "description": "SR system timestamp of the most recent record update"
-        },
-        {
-          "name": "srcTimestamp",
+          "name": "marketStatus",
           "fieldId": 118,
           "section": "body",
-          "offset": 85,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "source high-precision timestamp (if available): the SIP\u0027s, the exchange gateway\u0027s or a vendor\u0027s; 0 when the feed carries none"
-        },
-        {
-          "name": "marketStatus",
-          "fieldId": 121,
-          "section": "body",
-          "offset": 93,
+          "offset": 77,
           "size": 1,
           "type": "enum",
           "enum": "MarketStatus",
           "description": "market status of the index level (open, halted, closed); None where the source does not report one"
+        },
+        {
+          "name": "timestamp",
+          "fieldId": 115,
+          "section": "body",
+          "offset": 78,
+          "size": 8,
+          "type": "i64",
+          "semantics": "dotnetTicks",
+          "description": "SR system timestamp of the most recent record update"
         }
       ],
       "variable": [],
-      "layoutHash": "e550afe76b15c9c2",
+      "layoutHash": "80ee03031930a08f",
       "description": "One record per index ticker, covering both exchange-published indexes and SR synthetic indexes.\r\nLive index levels and quotes including SpiderRock synthetic index levels and quotes."
     },
     {
@@ -6112,10 +6082,10 @@
     {
       "name": "OptionExchOrder",
       "messageType": 2765,
-      "schemaHash": "73078dca435f57ea",
+      "schemaHash": "6d5197f88032792f",
       "pkeySize": 29,
-      "bodySize": 92,
-      "fixedSize": 149,
+      "bodySize": 84,
+      "fixedSize": 141,
       "isVariableLength": false,
       "fields": [
         {
@@ -6311,29 +6281,19 @@
           "size": 8,
           "type": "i64",
           "description": "SpiderRock data gateway timestamp"
-        },
-        {
-          "name": "exchTimestamp",
-          "fieldId": 151,
-          "section": "body",
-          "offset": 141,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "the matching engine\u0027s stamp, or the nearest the feed carries (the participant stamp on CTA and UTP); 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "164e95c389998f86",
+      "layoutHash": "3ca8852de8a51406",
       "description": "OptionExchOrder records carry live public (non-market maker) orders on one exchange, keyed by option, side and exchange.\r\nOnly the most recent order for each key is retained; the record is replaced as the exchange publishes updates."
     },
     {
       "name": "OptionExchPrint",
       "messageType": 2770,
-      "schemaHash": "1b69ee0a41bee060",
+      "schemaHash": "06411d6d682a99c8",
       "pkeySize": 8,
-      "bodySize": 89,
-      "fixedSize": 125,
+      "bodySize": 81,
+      "fixedSize": 117,
       "isVariableLength": false,
       "fields": [
         {
@@ -6439,20 +6399,10 @@
           "type": "i64",
           "semantics": "dotnetTicks",
           "description": "SR system timestamp of the most recent record update"
-        },
-        {
-          "name": "exchTimestamp",
-          "fieldId": 130,
-          "section": "body",
-          "offset": 117,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "the matching engine\u0027s stamp, or the nearest the feed carries (the participant stamp on CTA and UTP); 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "431e4be06081e1c0",
+      "layoutHash": "313a2c1656849eca",
       "description": "OptionExchPrint records carry one option print as reported by a direct exchange feed, keyed by SR print id.\r\nThey carry prints as reported by the listing exchange rather than from the consolidated OPRA feed."
     },
     {
@@ -6970,10 +6920,10 @@
     {
       "name": "OptionPrint",
       "messageType": 2800,
-      "schemaHash": "60a5c244c450b145",
+      "schemaHash": "6fb82023ac4daee8",
       "pkeySize": 27,
-      "bodySize": 193,
-      "fixedSize": 248,
+      "bodySize": 185,
+      "fixedSize": 240,
       "isVariableLength": false,
       "fields": [
         {
@@ -7316,29 +7266,19 @@
           "type": "i64",
           "semantics": "dotnetTicks",
           "description": "SR system timestamp of the most recent record update"
-        },
-        {
-          "name": "srcTimestamp",
-          "fieldId": 208,
-          "section": "body",
-          "offset": 240,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "source high-precision timestamp (if available): the SIP\u0027s, the exchange gateway\u0027s or a vendor\u0027s; 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "672b5dd2695a4412",
+      "layoutHash": "b54ac173812b4143",
       "description": "One record per active option series, replaced by each new print, so the record always holds the latest trade.\r\nThe most recent (last) print record for each active equity and future option series.  Quote markup represents quote that existed just prior to the print on the reporting exchange."
     },
     {
       "name": "OptionPrint2",
       "messageType": 2805,
-      "schemaHash": "632a99df70fa1ee6",
+      "schemaHash": "5afa44512d0a2a06",
       "pkeySize": 27,
-      "bodySize": 165,
-      "fixedSize": 220,
+      "bodySize": 157,
+      "fixedSize": 212,
       "isVariableLength": false,
       "fields": [
         {
@@ -7644,20 +7584,10 @@
           "type": "i64",
           "semantics": "dotnetTicks",
           "description": "SR system timestamp of the most recent record update"
-        },
-        {
-          "name": "srcTimestamp",
-          "fieldId": 194,
-          "section": "body",
-          "offset": 212,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "source high-precision timestamp (if available): the SIP\u0027s, the exchange gateway\u0027s or a vendor\u0027s; 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "275de1eface1caa2",
+      "layoutHash": "8e361fd6f2506ddc",
       "description": "One record per active option series, replaced by each new print, so the record always holds the latest trade.\r\nSame print as OptionPrint without the quote markup; adds volume broken out by trade type (ISO, SLA, MLA, cross, floor, multi-leg, unknown) and total volume."
     },
     {
@@ -10613,10 +10543,10 @@
     {
       "name": "SpreadBookQuote",
       "messageType": 2900,
-      "schemaHash": "4f775ead3cd86383",
+      "schemaHash": "14f448838f2b6a3e",
       "pkeySize": 17,
-      "bodySize": 139,
-      "fixedSize": 184,
+      "bodySize": 131,
+      "fixedSize": 176,
       "isVariableLength": false,
       "fields": [
         {
@@ -10869,29 +10799,19 @@
           "type": "flags",
           "enum": "SpreadScope",
           "description": "what the leg set spans; MultiTicker = cross-complex"
-        },
-        {
-          "name": "exchTimestamp",
-          "fieldId": 174,
-          "section": "body",
-          "offset": 176,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "the matching engine\u0027s stamp, or the nearest the feed carries (the participant stamp on CTA and UTP); 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "7d12212c70aee3bc",
+      "layoutHash": "fb2d0b269461f5ca",
       "description": "This table contains live spread quote records from the individual equity option exchanges.  Each record contains up to two price levels and represents a live snapshot of the book for a specific spread."
     },
     {
       "name": "SpreadExchOrder",
       "messageType": 2915,
-      "schemaHash": "2078cd70acaf537e",
+      "schemaHash": "4e2be5adf1b20da1",
       "pkeySize": 19,
-      "bodySize": 147,
-      "fixedSize": 194,
+      "bodySize": 139,
+      "fixedSize": 186,
       "isVariableLength": false,
       "fields": [
         {
@@ -11124,29 +11044,19 @@
           "type": "flags",
           "enum": "SpreadScope",
           "description": "what the leg set spans; MultiTicker = cross-complex"
-        },
-        {
-          "name": "exchTimestamp",
-          "fieldId": 177,
-          "section": "body",
-          "offset": 186,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "the matching engine\u0027s stamp, or the nearest the feed carries (the participant stamp on CTA and UTP); 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "7d5eba119292207b",
+      "layoutHash": "cd5c79a54ae1fb47",
       "description": "Live public spread orders for each exchange (if available)"
     },
     {
       "name": "SpreadExchPrint",
       "messageType": 2920,
-      "schemaHash": "72dd881a5519a212",
+      "schemaHash": "6664509bb5f119ea",
       "pkeySize": 9,
-      "bodySize": 180,
-      "fixedSize": 217,
+      "bodySize": 172,
+      "fixedSize": 209,
       "isVariableLength": true,
       "fields": [
         {
@@ -11360,20 +11270,10 @@
           "description": "SR system timestamp of the most recent record update"
         },
         {
-          "name": "exchTimestamp",
-          "fieldId": 183,
-          "section": "body",
-          "offset": 208,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "the matching engine\u0027s stamp, or the nearest the feed carries (the participant stamp on CTA and UTP); 0 when the feed carries none"
-        },
-        {
           "name": "scopeFlags",
           "fieldId": 180,
           "section": "body",
-          "offset": 216,
+          "offset": 208,
           "size": 1,
           "type": "flags",
           "enum": "SpreadScope",
@@ -11431,7 +11331,7 @@
           ]
         }
       ],
-      "layoutHash": "dec248fb1138f86e"
+      "layoutHash": "b591e25c6e455ce1"
     },
     {
       "name": "StockBookQuote",
@@ -12208,10 +12108,10 @@
     {
       "name": "StockPrint",
       "messageType": 3045,
-      "schemaHash": "21cb38fe8e02552b",
+      "schemaHash": "69075aa1cd4d0f55",
       "pkeySize": 15,
-      "bodySize": 136,
-      "fixedSize": 179,
+      "bodySize": 128,
+      "fixedSize": 171,
       "isVariableLength": false,
       "fields": [
         {
@@ -12473,20 +12373,10 @@
           "type": "i64",
           "semantics": "dotnetTicks",
           "description": "SR system timestamp of the most recent record update"
-        },
-        {
-          "name": "srcTimestamp",
-          "fieldId": 169,
-          "section": "body",
-          "offset": 171,
-          "size": 8,
-          "type": "i64",
-          "semantics": "unixNanos",
-          "description": "source high-precision timestamp (if available): the SIP\u0027s, the exchange gateway\u0027s or a vendor\u0027s; 0 when the feed carries none"
         }
       ],
       "variable": [],
-      "layoutHash": "b40b6c9a2e0d31ca",
+      "layoutHash": "b89f8b84bf8b91a7",
       "description": "One record per ticker, replaced by each new print, so the record always holds the latest trade.\r\nprtSize is in shares.\r\nThe most recent (last) print record for CTS/UTDF markets as well as SpiderRock synthetic markets.  Records also incorporate some summary detail and closing mark information as well."
     },
     {
