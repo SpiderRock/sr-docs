@@ -1,7 +1,7 @@
 {
   "format": "spiderstream-wire-layout",
   "formatVersion": 1,
-  "generatedFrom": "schema:bae870e85c5b09b2ecd60633db335736eada238248d04d08ffd5d891242dd057",
+  "generatedFrom": "schema:5b3f1387747b008c9eef9735c485279a44fe20e53be376678e9aefb236608d6a",
   "byteOrder": "little",
   "packing": "none: every struct is byte-packed, no alignment padding",
   "primitives": {
@@ -37,7 +37,7 @@
     "messageLength": "header.message_length = total bytes of this message; a datagram can carry several messages back to back",
     "variable": "the message\u0027s \u0027variable\u0027 array, in array order; it is already in wire order",
     "datagram": "a UDP payload is either one or more whole messages back to back, or one jumbo fragment",
-    "jumbo": "a payload starting with u32 0xFF000000 is a JumboFragmentHeader plus up to 1384 bytes of a larger frame; join fragments with the same (appID, pid, id) in index order 0..count-1, then parse the joined bytes as messages back to back. Senders fragment anything over 1400 bytes"
+    "jumbo": "a payload starting with u32 0xFF000000 is a JumboFragmentHeader plus up to 1384 bytes (by default) of a larger frame; join fragments with the same (appID, pid, id) in index order 0..count-1, then parse the joined bytes as messages back to back. Senders fragment anything over 1400 bytes by default"
   },
   "types": {
     "Header": {
@@ -345,8 +345,8 @@
           "name": "tag",
           "offset": 0,
           "size": 1,
-          "type": "u8",
-          "description": "ContentKeyType"
+          "type": "enum",
+          "enum": "ContentKeyType"
         },
         {
           "name": "payload",
@@ -362,6 +362,7 @@
       "underlying": "u8",
       "flags": true,
       "values": {
+        "None": 0,
         "IsDeleted": 1,
         "FromCache": 2,
         "FromBridge": 4,
@@ -534,6 +535,16 @@
         "None": 0,
         "Preview": 1,
         "Final": 2
+      }
+    },
+    "ContentKeyType": {
+      "underlying": "u8",
+      "flags": false,
+      "values": {
+        "None": 0,
+        "SpreadId": 1,
+        "ContractType": 2,
+        "Calendar": 3
       }
     },
     "ContractUnit": {
@@ -11436,10 +11447,10 @@
     {
       "name": "StockBookQuote",
       "messageType": 3000,
-      "schemaHash": "3a5952583c4c3a86",
+      "schemaHash": "2bed708714fd3d37",
       "pkeySize": 15,
-      "bodySize": 94,
-      "fixedSize": 137,
+      "bodySize": 95,
+      "fixedSize": 138,
       "isVariableLength": false,
       "fields": [
         {
@@ -11647,10 +11658,20 @@
           "type": "i64",
           "semantics": "unixNanos",
           "description": "inbound packet PTP timestamp from SR gateway switch; synchronized with facility grandfather clock"
+        },
+        {
+          "name": "tradingSession",
+          "fieldId": 168,
+          "section": "body",
+          "offset": 137,
+          "size": 1,
+          "type": "enum",
+          "enum": "TradingSession",
+          "description": "session this quote was taken in [RegularMkt, PreMkt, PostMkt, NextDay, MktClosed, Rotation]"
         }
       ],
       "variable": [],
-      "layoutHash": "3c9884e44eddb973",
+      "layoutHash": "6a38ce0f07266dc6",
       "description": "One record per ticker, replaced on each book change; updateType says whether the price, the size or both changed.\r\nThis table contains live equity quote records for all CQS/UQDF securities as well as US OTC equity securities, SpiderRock synthetic markets, and a number of major indexes.  Each record contains up to two price levels and represents a live snapshot of the book for a specific market."
     },
     {
@@ -12208,10 +12229,10 @@
     {
       "name": "StockPrint",
       "messageType": 3045,
-      "schemaHash": "21cb38fe8e02552b",
+      "schemaHash": "6b85cc24846db9a0",
       "pkeySize": 15,
-      "bodySize": 136,
-      "fixedSize": 179,
+      "bodySize": 137,
+      "fixedSize": 180,
       "isVariableLength": false,
       "fields": [
         {
@@ -12475,10 +12496,20 @@
           "description": "SR system timestamp of the most recent record update"
         },
         {
+          "name": "tradingSession",
+          "fieldId": 172,
+          "section": "body",
+          "offset": 171,
+          "size": 1,
+          "type": "enum",
+          "enum": "TradingSession",
+          "description": "session this print occurred in [RegularMkt, PreMkt, PostMkt, NextDay, MktClosed, Rotation]"
+        },
+        {
           "name": "srcTimestamp",
           "fieldId": 169,
           "section": "body",
-          "offset": 171,
+          "offset": 172,
           "size": 8,
           "type": "i64",
           "semantics": "unixNanos",
@@ -12486,7 +12517,7 @@
         }
       ],
       "variable": [],
-      "layoutHash": "b40b6c9a2e0d31ca",
+      "layoutHash": "bc03c275882dc60b",
       "description": "One record per ticker, replaced by each new print, so the record always holds the latest trade.\r\nprtSize is in shares.\r\nThe most recent (last) print record for CTS/UTDF markets as well as SpiderRock synthetic markets.  Records also incorporate some summary detail and closing mark information as well."
     },
     {
